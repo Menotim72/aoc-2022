@@ -41,6 +41,7 @@ int main()
     third = n;
   }
   printf("%d\n", first + second + third);
+  return 0;
 }
 
 #include <stdlib.h>

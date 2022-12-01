@@ -21,6 +21,7 @@ int main()
   if (n > max)
     max = n;
   printf("%d\n", max);
+  return 0;
 }
 
 #include <stdlib.h>
