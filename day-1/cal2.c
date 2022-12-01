@@ -1,11 +1,8 @@
 #include <stdio.h>
 
-#define MAXLINE 100
-
-char linebfr[MAXLINE];
-
 int get_number_line(void);
 
+/* gets the sum of the three highest-sum integer sequences */
 int main()
 {
   int i, n, first, second, third;
@@ -43,23 +40,3 @@ int main()
   printf("%d\n", first + second + third);
   return 0;
 }
-
-#include <stdlib.h>
-
-int get_number_line(void)
-{
-  char c;
-  int i = 0;
-  while ((c = getchar()) != '\n' && c != EOF) {
-    linebfr[i++] = c;
-  }
-  if (c == EOF)
-    return -1;
-  else if (i == 0)
-    return 0;
-  else {
-    linebfr[i] = '\0';
-    return atoi(linebfr);
-  }
-}
-  

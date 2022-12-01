@@ -1,11 +1,8 @@
 #include <stdio.h>
 
-#define MAXLINE 100
-
-char linebfr[MAXLINE];
-
 int get_number_line(void);
 
+/* Get sequence of numbers with highest sum */
 int main()
 {
   int i, n, max;
@@ -24,22 +21,4 @@ int main()
   return 0;
 }
 
-#include <stdlib.h>
-
-int get_number_line(void)
-{
-  char c;
-  int i = 0;
-  while ((c = getchar()) != '\n' && c != EOF) {
-    linebfr[i++] = c;
-  }
-  if (c == EOF)
-    return -1;
-  else if (i == 0)
-    return 0;
-  else {
-    linebfr[i] = '\0';
-    return atoi(linebfr);
-  }
-}
-  
+ 
