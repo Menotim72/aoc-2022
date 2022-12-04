@@ -11,4 +11,5 @@ int main()
     total += score(choice(other, win), win);
   }
   printf("%d\n", total);
+  return 0;
 }

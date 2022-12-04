@@ -11,4 +11,5 @@ int main()
     total += score(my, cmp(my, other));
   }
   printf("%d\n", total);
+  return 0;
 }
