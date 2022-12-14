@@ -77,49 +77,7 @@ fn fall_sand(mut rocks: HashSet<Point>, is_floor: bool) -> i32 {
     }
     i
 }
-   
-/*
-#[derive(PartialEq, Eq, Debug)]
-enum Direction {
-    Down,
-    Right,
-}
-
-struct Line {
-    start: Point,
-    end: Point,
-    direction: Direction,
-}
-
-impl Line {
-    fn between(a: Point, b: Point) -> Self {
-	if a.x == b.x {
-	    Line {
-		start: min_by_key(a, b, |pt| pt.y),
-		end: max_by_key(a, b, |pt| pt.y),
-		direction: Down,
-	    }
-	} else if a.y == b.y {
-	    Line {
-		start: min_by_key(a, b, |pt| pt.x),
-		end: max_by_key(a, b, |pt| pt.x),
-		direction: Right,
-	    }
-	} else { panic!("points not on the same line"); }
-    }
-
-    fn overlaps(&self, other: &Self) -> Option<Self> {
-	if self.direction != other.direction {
-	    return None;
-	}
-	match self.direction {
-	    Right => {
-		if self.y != other.y {
-		    
-	}
-    }
-}
-*/
+ 
 fn main() {
     let rocks = get_input();
     println!("Part 1: {}", fall_sand(rocks.clone(), false));
